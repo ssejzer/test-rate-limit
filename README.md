@@ -13,13 +13,14 @@ A Go script that automatically discovers the rate limits of a web server by incr
 ## Usage
 
 ```bash
-go run ratelimit.go -url <target-url>
+go run ratelimit.go -url <target-url> [ -method POST -data data-string ]
 ```
 
 ## Example
 
 ```bash
 go run ratelimit.go -url https://api.example.com/v1/endpoint
+go run ratelimit.go -url https://example.com/api -method POST -data "username=test&password=1234"
 ```
 
 ## Expected Output
